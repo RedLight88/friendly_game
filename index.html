@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Pixel Character Game</title>
+    <style>
+        body, html { height: 100%; margin: 0; padding: 0; }
+        canvas {
+            width: 1280px; /* Set width of the canvas to 16:9 aspect ratio */
+            height: 720px; /* Set height of the canvas to 16:9 aspect ratio */
+            display: block;
+            margin: auto;
+            border: 1px solid #000;
+            background: url('farm_background.png') no-repeat center center; /* Set initial background */
+            background-size: 1280px 720px; /* Adjust to fit the canvas size */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
