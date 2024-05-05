@@ -32,6 +32,7 @@ document.addEventListener('keydown', function(event) {
             }
             break;
     }
+    limitMovementWithinBounds();
     handleBackgroundTransition();
     if (currentBackground === 'city') {
         limitHeightInCityScene();  // Limit height in the city scene
@@ -40,6 +41,6 @@ document.addEventListener('keydown', function(event) {
         restrictMovementInBirthScene();  // Ensure this is called only in the 'birth' scene
     }
     
-    limitMovementWithinBounds();
+    
     updateGame();
 });

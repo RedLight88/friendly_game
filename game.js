@@ -80,54 +80,29 @@ function updateBackground() {
 }
 
 // Function to restrict character's movement within the canvas boundaries
-// Function to restrict character's movement within the canvas boundaries
 function limitMovementWithinBounds() {
     const rightEdge = canvas.width;
     const leftEdge = 0;
     const topEdge = 0;
     const bottomEdge = canvas.height;
 
-    // Check and adjust if character tries to move beyond the right boundary
-    if (charX > rightEdge - 32) {  // Assuming the character width is 32 pixels
-        charX = rightEdge - 32;
+    // Ensure character's position does not exceed the canvas boundaries
+    if (charX >= rightEdge) {
+        charX = rightEdge - 1;  // Allow reaching just up to the edge, not beyond
+    } else if (charX <= leftEdge) {
+        charX = leftEdge;  // Ensure the character does not move beyond the left boundary
     }
-    // Check and adjust if character tries to move beyond the left boundary
-    if (charX < leftEdge) {
-        charX = leftEdge;
-    }
-    // Check and adjust if character tries to move beyond the top boundary
-    if (charY < topEdge) {
-        charY = topEdge;
-    }
-    // Check and adjust if character tries to move beyond the bottom boundary
-    if (charY > bottomEdge - 64) {  // Assuming the character height is 64 pixels
-        charY = bottomEdge - 64;
-    }
-}
-// Function to restrict character's movement within the canvas boundaries
-function limitMovementWithinBounds() {
-    const rightEdge = canvas.width;
-    const leftEdge = 0;
-    const topEdge = 0;
-    const bottomEdge = canvas.height;
 
-    // Check and adjust if character tries to move beyond the right boundary
-    if (charX > rightEdge - 32) {  // Assuming the character width is 32 pixels
-        charX = rightEdge - 32;
-    }
-    // Check and adjust if character tries to move beyond the left boundary
-    if (charX < leftEdge) {
-        charX = leftEdge;
-    }
-    // Check and adjust if character tries to move beyond the top boundary
-    if (charY < topEdge) {
-        charY = topEdge;
-    }
-    // Check and adjust if character tries to move beyond the bottom boundary
-    if (charY > bottomEdge - 64) {  // Assuming the character height is 64 pixels
-        charY = bottomEdge - 64;
+    if (charY >= bottomEdge) {
+        charY = bottomEdge - 1;  // Allow reaching just up to the bottom edge, not beyond
+    } else if (charY <= topEdge) {
+        charY = topEdge;  // Ensure the character does not move beyond the top boundary
     }
 }
+
+
+
+
 
 function restrictMovementInBirthScene() {
     const topY = 0; // Top of the canvas
