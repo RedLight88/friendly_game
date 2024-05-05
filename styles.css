@@ -1,0 +1,87 @@
+canvas {
+    display: block; /* Remove default margin */
+    background-color: #000; /* Optional: Set a background color */
+    position: absolute; /* Position it over other items */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+#gameCanvas {
+    width: 100vw;  /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    display: block; /* Remove any extra space below the canvas */
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed positioning relative to the viewport */
+    z-index: 1000; /* Higher than any other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width to cover the whole viewport */
+    height: 100%; /* Full height to cover the whole viewport */
+    background-color: rgba(0,0,0,0.4); /* Semi-transparent black background */
+    backdrop-filter: blur(8px); /* Blur effect for the area outside the modal */
+    font-weight: bold;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Centering the content vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Half of the viewport width */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect center alignment */
+    font-weight: bold;
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#fullscreenBtn {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 10; /* Ensure it's above the canvas */
+}
+
+#fullscreenBtn:hover {
+    opacity: 1;
+}
+
+
