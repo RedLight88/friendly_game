@@ -1,7 +1,7 @@
 // Character and sign setup
 let charX = canvas.width / 2;
 let charY = canvas.height / 2;
-let speed = 20;
+let speed = 6;
 let direction = 'left';
 let isModalVisible = false;
 let currentOverlay = null;
