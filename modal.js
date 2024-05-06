@@ -4,8 +4,8 @@ function showPromptIfNearSign() {
         Object.values(sceneConfigurations[currentBackground].signPositions).forEach(sign => {
             const distance = Math.sqrt((charX - sign.x) ** 2 + (charY - sign.y) ** 2);
             if (distance < proximityThreshold) {
-                const text = "E";
-                const textSize = 30;
+                const text = "Press E";
+                const textSize = 20;
                 ctx.font = `${textSize}px Arial`;
                 ctx.fillStyle = "white";
                 const textWidth = ctx.measureText(text).width;
