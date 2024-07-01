@@ -20,11 +20,11 @@ const sceneConfigurations = {
             sign5: {x: 100, y: 100}
         },
         'modalMessages': {
-            sign1: "TE IUBESC",
-            sign2: "Spre parc",
-            sign3: "Pentru final pe aici",
-            sign4: "Spre Geea",
-            sign5: "Am stat zi si noapte sa fac ce am facut, e scris cu curul, dar merge, sper ca te-a distrat"
+            sign1: "sign1",
+            sign2: "sign2",
+            sign3: "sign3",
+            sign4: "sign4",
+            sign5: "sign5"
         },
         'transitions': {
             left: 'city',
@@ -40,9 +40,9 @@ const sceneConfigurations = {
             sign3: {x: 1100, y:650}
         },
         'modalMessages': {
-            sign1: "Aici am facut prima citire in tarot",
-            sign2: "Nu ai idee cat tin la tine si cum tot ce ai facut m-a ajutat",
-            sign3:"Esti cea mai buna ascultatoare"
+            sign1: "sign1",
+            sign2: "sign2",
+            sign3:"sign3"
         },
         'transitions': {
             down: 'farm'
@@ -67,14 +67,14 @@ const sceneConfigurations = {
             sign8: { x: 800, y: 412 }
         },
         'modalMessages': {
-            sign1: "Stiai ca esti foarte desteapta?",
-            sign2: "Extrem de seducatoare?",
-            sign3: "Are rost sa vorbesc despre frumusete?",
-            sign4: "semnat Robert",
-            sign5: "Camera stanga din inima mea",
-            sign6: "LA MULTI ANI",
-            sign7: "Te pot asculta toata ziua",
-            sign8: "Foarte interesanta si ti-o zice un om cu standarde mari",
+            sign1: "none",
+            sign2: "undefined",
+            sign3: "&nbsp",
+            sign4: "none",
+            sign5: "undefined",
+            sign6: "fuck",
+            sign7: "this",
+            sign8: "can't remember",
 
         },
         'transitions':{
